@@ -71,6 +71,6 @@ public class App {
     }
 
     private static void clearScreen() {
-        // System.out.println("\033\143");
+        System.out.println("\033\143");
     }
 }
