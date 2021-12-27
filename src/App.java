@@ -10,6 +10,7 @@ public class App {
     private static int x, y;
 
     public static void main(String[] args) throws Exception {
+        int muchShips = 0;
         List<List<String>> arrays = new ArrayList<>();
 
         // add arraylist 2 dimensi
@@ -31,7 +32,12 @@ public class App {
 
         printArrays(arrays);
 
-        for (int i = 0; i < 5; i++) {
+        // input user
+        System.out.print("How many ships? : ");
+        muchShips = scan.nextInt();
+
+        for (int i = 0; i < muchShips; i++) {
+            System.out.println("=".repeat(5) + " Ships " + (i + 1) + " " + "=".repeat(5));
             System.out.print("Input X : ");
             x = scan.nextInt();
             System.out.print("Input Y : ");
@@ -65,6 +71,6 @@ public class App {
     }
 
     private static void clearScreen() {
-        System.out.println("\033\143");
+        // System.out.println("\033\143");
     }
 }
